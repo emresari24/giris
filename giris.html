@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fit miyiz!!</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .ilk{
+            display:inline-block;
+            margin-bottom: 0;
+        }
+        .üst{
+            background-color: #332e29;
+            width: 100%;
+            height: 80px;
+            position: fixed;
+            z-index: 1;
+        }
+        .üst-logo{
+            color:#f0e3d7 ;
+            font-size: 38px;
+            margin-left: 3%;
+            margin-top: 0;
+            padding-top: 14px;
+            
+        }
+        .sol{
+            background-color: #332e29;
+            width: 50%;
+            height: 632px;
+            margin-right: 0;
+            float: left;
+            color: #fff;
+            font-size: 1.25rem;
+            line-height: 2;
+            font-family: 'Open Sans',sans-serif;
+            display: block;
+        }
+        .sağ{
+            background-image:"https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1600" ;
+            width: 50%;
+            height: 632px;
+            float: right;
+        }
+        .sağ img{
+            width: 100%;
+        }
+        .sol-yazı{
+            width: 80%;
+            margin-left:10%;
+            margin-top: 130px;
+            
+        }
+        .sol button{
+            border: #fff solid 5px;
+            color: #fff;
+            background-color: #332e29;
+            height: 40px;
+            display:block;
+            margin-top: 40px;
+            margin-left: 10%;
+            font-size: 15px;
+            font-weight: bold;
+            width: 30%;
+            transition-duration: .5s;
+            display:inline-block;
+            
+        }
+        .sol button:hover{
+            background-color: #fff;
+            border: #332e29 solid 5px;
+            color: #332e29;
+            cursor: pointer;
+        }
+        .ikinci{
+            margin-top: 0;
+            background-color: #f0e3d7;
+            height: 850px;
+            width: 100%;
+        }
+        .ikinci-üst-yazı1{
+            background-color:#f0e3d7 ;
+            text-align: center;
+            font-size: 4rem;
+            margin: -5px auto 0;
+            padding-top: 50px;
+            font-weight: bold;
+            
+        }
+        .ikinci-üst-yazı2{
+            width: 17%;
+            margin: auto;
+            padding-top: 15px;
+            font-size: 17px;
+        }
+        .ikinci-üst-yazı3{
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            padding-top: 15px;
+            font-size: 17px;
+            padding-top: 30px;
+            line-height: 25px;
+            font-weight: bold;
+        }
+        .ikinci-foto{
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+        }
+        .ikinci-1-foto{
+            position: relative;
+            width: 300px;
+            top: 20px;
+         }
+         .ikinci-1-foto:hover{
+            top: 10px;
+            transition-duration: .3s;
+         }
+         .ikinci-2-foto{
+            position: relative;
+            margin-left: 40px;
+            margin-right: 40px;
+            width: 300px;
+            height: 400px;
+            top: 20px;
+         }
+         .ikinci-2-foto:hover{
+            top: 10px;
+            transition-duration: .3s;
+         }
+         .ikinci-3-foto{
+            position: relative;
+            width: 300px;
+            top: 20px;
+         }
+         .ikinci-3-foto:hover{
+            top: 10px;
+            transition-duration: .3s;
+         }
+         .ikinci button{
+            border: #fff solid 5px;
+            color: #fff;
+            background-color: #332e29;
+            height: 50px;
+            display:block;
+            margin-top: 80px;
+            margin-left: 35%;
+            font-size: 15px;
+            font-weight: bold;
+            width: 30%;
+            transition-duration: .5s;
+            
+         }
+         .ikinci button:hover{
+            background-color: #fff;
+            border: #332e29 solid 5px;
+            color: #332e29;
+            cursor: pointer;
+        }
+        .ucuncu{
+            background-image: url("https://images.pexels.com/photos/5067741/pexels-photo-5067741.jpeg?auto=compress&cs=tinysrgb&w=1600");
+            margin-top: 0;
+            background-color: #f0e3d7;
+            height: 850px;
+            width: 100%;
+        }
+        .ucuncu-tablo{
+            display: inline-block;
+            background-color: #332e29;
+            width: 250px;
+            height: 200px;
+            border-radius: 20px;
+            border: 5px solid #B7B78A;
+            position: relative;
+            color: #fff;
+            padding: 30px;
+            margin: 40px;
+            margin-top: 110px;
+        }
+        .dorduncu-sol{
+            background-color: #f0e3d7;
+            width: 50%;
+            height: 750px;
+            float: left;
+        }
+        .dorduncu-sol-img{
+            display: inline;
+            width: 40%;
+            padding: 9%;
+            padding-left:25%;
+        }
+        .dorduncu-sag{
+            display: inline;
+            margin-top: 70px;
+            margin-right: 150px;
+            float: right;
+            width: 30%;
+            background-color: #fff;
+            padding: 50px;
+            margin-left: 40px;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .besici{
+            background-color: #332e29;
+            width: 100%;
+            height: 750px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ilk">
+        <div class="üst">
+            <p class="üst-logo">Logo</p>
+        </div>
+        <div class="sol">
+            <p class="sol-yazı">Fitness hedeflerinizi aşmanıza yardımcı olmaya kararlıyız. Kapalı havuzumuz, basketbol sahalarımız, grup egzersiz sınıflarımız ve son teknoloji fitness zeminimiz ile tam olarak aradığınızı bulacaksınız.</p>
+            <a href="fıtness.html"><button type="button">Şimdi Katıl</button></a>
+        </div>
+        <div class="sağ">
+            <img src="https://images.pexels.com/photos/136404/pexels-photo-136404.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+        </div>
+    </div>
+    <div class="ikinci">
+        <div class="ikinci-üst-yazı">
+            <p class="ikinci-üst-yazı1">Spor Salonu Hakkında</p>
+            <p class="ikinci-üst-yazı2">İSTANBUL SAĞLIK VE RAKET KULÜBÜ</p>
+            <p class="ikinci-üst-yazı3">Sizi her zaman ve her zaman en iyi şekilde tutmak için üyeliğimizin her yönünü entegre dijital ve kulüp içi teklifleri kapsayacak şekilde dönüştürdük'den resimler</p>
+            <div class="ikinci-foto">
+                <div class="ikinci-foto-arkası-renk"></div>
+                <img class="ikinci-1-foto" src="https://images.pexels.com/photos/1431283/pexels-photo-1431283.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+                <img class="ikinci-2-foto" src="https://images.pexels.com/photos/896059/pexels-photo-896059.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+                <img class="ikinci-3-foto" src="https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+                <div><a href="fıtness.html"><button type="button">Daha Fazla Göster</button></a></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="ucuncu">
+        <div>
+            <div style="width: 50px; height: 400px;"></div>
+            <table>
+                <tr>
+                    <td style="width: 120px;"></td>
+                    <td class="ucuncu-tablo">
+                        <h2>SPOR SALONU HAKKINDA</h2>
+                        <br>
+                        <div>Sample text. Click to select the text box. Click again or double click to start editing the text.</div>
+                    </td>
+                    <td class="ucuncu-tablo">
+                        <h2>YAĞ KAYBETMEK</h2>
+                        <br>
+                        <div>Sample text. Click to select the text box. Click again or double click to start editing the text.</div>
+                    </td>
+                    <td class="ucuncu-tablo">
+                        <h2>EĞITIM</h2>
+                        <br>
+                        <div>Sample text. Click to select the text box. Click again or double click to start editing the text.</div>
+                    </td>
+                    <td class="ucuncu-tablo">
+                        <h2>BIZIM TAKIM</h2>
+                        <br>
+                        <div>Sample text. Click to select the text box. Click again or double click to start editing the text.</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="dorduncu">
+        <div class="dorduncu-sol">
+            <img class="dorduncu-sol-img" src="https://images.pexels.com/photos/1769626/pexels-photo-1769626.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+        </div>
+        <div class="dorduncu-sag">
+            <h1 style="text-decoration: underline !important;">Motivasyonu artırın</h1>
+            <br>
+            <br>
+            <p style="text-decoration: dotted;">Hayatınızın en iyi hareketini yapmak için sağlık ve sağlıklı yaşam tesislerimizden birinde bizimle iletişime geçin veya bizi ziyaret edin. Formda kalınca üyeliğin avantajlarını keşfedin, formda kalın ve sağlığınıza ve zindeliğinize odaklanın.</p>
+            <br>
+            <img style="width: 32%; border-radius: 10px;" src="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+        </div>
+    </div>
+    <div class="besici">
+
+    </div>
+
+
+</body>
+</html>
